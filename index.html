@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="index.js"></script>
+
+    <header>
+      <nav>
+        <ul>
+          <div class="logo">Awesome Books</div>
+          <li><a href="#" data-section="Bookslist">List</a></li>
+          <li><a href="#" class="pam" data-section="Add-book">Add new</a></li>
+          <li><a href="#" class="pam" data-section="contactInfo">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="datetime"></p>
+    </header>
+    <main>
+      
+      <section id="Bookslist" >
+        <div id="books-list"></div>
+      </section>
+      <section id="Add-book">
+            <div class="info" >
+              <h2>Add a new book</h2>
+            <form id="add-book-form">
+              <input type="text" id="title"  placeholder="Title"  required><br><br/>
+              <input type="text" id="author" placeholder="Auther" required><br></br>
+              <button type="submit" id="add-btn" >Add</button>
+         </form>
+        </div>
+      </section>
+
+      
+        <section id="contactInfo">
+          <div class="contact">
+          <h2 class="contact-h">Contact Information</h2>
+          <p>do you have any question or you want to "Hello"?<br>
+            you can reach to us</p>
+          <ul>
+            <li>our email:email@gmail.com</li>
+            <li>our phone number 0043586534422</li>
+            <li>Our address Streetname 22, 84503,City,Country</li>
+            
+
+          </ul>
+        </div>
+        </section>
+
+        <footer>
+          <p id="footers">Copyright .....</p>
+        </footer>
+      </main>
+
+       
+       <script src="index.js"></script>
 </body>
 </html>
